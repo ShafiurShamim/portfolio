@@ -1,4 +1,5 @@
 window.$ = window.jQuery = require("jquery");
+import 'lazysizes'
 
 // Modal Start
 $(".hover-layer").on('click', function () {
