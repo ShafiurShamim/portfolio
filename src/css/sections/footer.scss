@@ -1,0 +1,10 @@
+
+.social-links a {
+    @apply p-1
+}
+.social-links a img {
+    @apply w-8 h-8
+}
+.social-links a:hover {
+    @apply bg-white rounded
+}

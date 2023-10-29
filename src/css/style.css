@@ -1,0 +1,103 @@
+.my-modal {
+    display: none;
+    position: fixed;
+    z-index: 111;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.my-modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.close {
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    text-decoration: none;
+    top: -0px;
+    width: 40px;
+    color: #fff;
+    font-weight: bold;
+    background: red;
+    cursor: pointer;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+.close:hover {
+    background-color: rgba(64, 128, 128, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 0;
+
+        /* left: 0; */
+        bottom: 0;
+        right: -100%;
+        z-index: 111;
+        display: block;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu .menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background: url(../images/mobile-bg.svg) no-repeat 50%;
+        background-size: 100%;
+    }
+}
+.menu.show {
+    right: 0;
+}
+
+.menu.show .menu-wrapper a {
+    margin-left: 0;
+}
+.menu.show button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

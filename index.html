@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#236284">
+    <title>Portfolio | Shafiur Shamim</title>
+    <link rel="shortcut icon" href="assets/images/logo-32.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="">
+    <div id="app">
+        <header id="header">
+            <div class="fixed top-0 left-0 right-0 z-50 max-h-20 bg-base-100 text-base-content">
+                <!-- nav bar -->
+                <nav class="navigation relative container mx-auto p-2">
+                    <div class="flex items-center justify-between">
+                        <!-- logo -->
+                        <div class="p-2">
+                            <a href="#home" title="Home">
+                                <img class="h-8 md:h-12" src="assets/images/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <!-- menu items -->
+                        <div class="menu bg-base-100">
+                            <div class="menu-wrapper flex flex-row space-x-6">
+                                <button class="md:hidden hover:bg-base-content hover:text-base-100 brightness-150"
+                                    type="button">
+                                    <svg width="14" viewBox="0 0 25 25" class="fill-current">
+                                        <path
+                                            d="M22.222 0 25 2.778l-9.723 9.721L25 22.222 22.222 25 12.5 15.277 2.778 25 0 22.222 9.722 12.5 0 2.778 2.778 0 12.5 9.722 22.222 0z"
+                                            class="fill-current" fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <a href="#services" title="Services">Services</a>
+                                <a href="#portfolio" title="Portfolio">Portfolio</a>
+                                <a href="#clients" title="Clients">Clients</a>
+                                <a href="#education" title="Education">Education</a>
+                                <a href="#contact" title="Contact">Contact</a>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 mr-3">
+                            <label class="d-swap d-swap-rotate" title="Change Theme">
+                                <input type="checkbox" class="hidden" name="switch">
+                                <!-- sun icon -->
+                                <svg class="d-swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                                </svg>
+                                <!-- moon icon -->
+                                <svg class="d-swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                                </svg>
+                            </label>
+                            <a class="leading-none md:hidden">
+                                <div class="hamburger-nav">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Section Home-->
+        <section id="home">
+            <!-- Flex Container -->
+            <div class="section-home">
+                <!-- Left item -->
+                <div class="intro my-8 md:mt-0 md:w-1/2">
+                    <h1 class="font-semibold">
+                        <span class="im_">Hey, I'm </span>
+                        <span class="block text-4xl font-bold md:text-5xl mt-4 drop-shadow-md brightness-150">Shafiur
+                            Rahman</span>
+                    </h1>
+                    <div class="theme-changer flex gap-2 mt-5">
+                        <div class="d-btn d-btn-xs" data-theme="coffee" title="Coffee Theme">Coffee</div>
+                        <div class="d-btn d-btn-xs" data-theme="synthwave" title="Synthwave Theme">Synthwave</div>
+                        <div class="d-btn d-btn-xs" data-theme="valentine" title="Valentine Theme">Valentine</div>
+                    </div>
+                    <h2 class="mb-5 mt-5 text-2xl font-semibold leading-normal">
+                        <span class="gradient">Professional</span>
+                        <span class="block">Web Developer & Digital Marketer</span>
+                    </h2>
+                    <div class="flex justify-center md:justify-start pt-4">
+                        <a href="assets/cv.pdf" target="_blank" class="d-btn d-btn-neutral" title="Download CV">Download
+                            CV</a>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="hero pb-16 md:w-1/2">
+                    <img src="assets/images/hero.png" alt="Photo of Shafiur Shamim">
+                </div>
+            </div>
+        </section>
+        <!-- //Section Home-->
+        <!-- Section Services-->
+        <section id="services">
+            <div class="section-services">
+                <div>
+                    <div class="flex flex-wrap">
+                        <div class="text-center max-w-2xl mb-10 mx-auto">
+                            <span class="text-sm font-semibold">What I offer?</span>
+                            <h2 class="section-header">My Services</h2>
+                            <!-- <p>
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4">
+                        <div class="service-card">
+                            <div>
+                                <img src="assets/images/services/wd-256.png" alt="Web Development">
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="service-card">
+                            <div>
+                                <img src="assets/images/services/dm-256.png" alt="Digital Marketing">
+                            </div>
+                            <h3>Digital Marketing</h3>
+                        </div>
+                        <div class="service-card">
+                            <div>
+                                <img src="assets/images/services/ws-256.png" alt="Web Scraping">
+                            </div>
+                            <h3>Web Scraping</h3>
+                        </div>
+                        <div class="service-card">
+                            <div>
+                                <img src="assets/images/services/bf-256.png" alt="Bug Fixing">
+                            </div>
+                            <h3>Bug Fixing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Section Services-->
+        <!-- Section Portfolio-->
+        <section id="portfolio">
+            <div class="section-portfolio">
+                <div class="text-center">
+                    <span class="text-sm font-semibold">What I did?</span>
+                    <h2 class="section-header">Some Works</h2>
+                </div>
+                <div id="portfolioBtnContainer" class="btn-group">
+                    <button class="d-btn d-btn-base-100 active" data-id="all">
+                        Show all
+                    </button>
+                    <button class="d-btn d-btn-base-100" data-id="web-project-1">
+                        Website Project One
+                    </button>
+                    <button class="d-btn d-btn-base-100" data-id="web-project-2">
+                        Website Project Two
+                    </button>
+                    <button class="d-btn d-btn-base-100" data-id="fb-marketing">
+                        Facebook Marketing
+                    </button>
+                </div>
+                <!-- Portfolio Gallery Grid -->
+                <div class="pg-grid grid md:grid-cols-3 grid-cols-2 gap-4">
+                    <div class="pg-item web-project-1">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/appstosoft-home.png" alt="Home Page">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Home Page</span>
+                    </div>
+                    <div class="pg-item web-project-1">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/appstosoft-download.png" alt="Download Page">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Download Page</span>
+                    </div>
+                    <div class="pg-item web-project-1">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/appstosoft-dashboard.png" alt="Dashboard Page">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Dashboard Page</span>
+                    </div>
+                    <div class="pg-item web-project-2">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/ncc-home.png" alt="Home Page">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Home Page</span>
+                    </div>
+                    <div class="pg-item web-project-2">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/ncc-courses.png" alt="Courses Menu">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Courses Menu</span>
+                    </div>
+                    <div class="pg-item web-project-2">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/ncc-courses-backpanel.png" alt="Dashboard Page">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Dashboard Page</span>
+                    </div>
+
+                    <div class="pg-item fb-marketing">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/fb-marketing-01.png" alt="Detail Targeting">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Detail Targeting</span>
+                    </div>
+                    <div class="pg-item fb-marketing">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/fb-marketing-02.png" alt="Create Audiences">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Create Audiences</span>
+                    </div>
+                    <div class="pg-item fb-marketing">
+                        <div class="pg-img">
+                            <img src="assets/images/gallery/fb-marketing-03.png" alt="Publishing Ads">
+                            <div class="hover-layer"></div>
+                        </div>
+                        <span>Publishing Ads</span>
+                    </div>
+                </div>
+                <!-- //Portfolio Gallery Grid -->
+            </div>
+        </section>
+        <!-- //Section Portfolio-->
+        <!-- Section Clients-->
+        <section id="clients">
+            <div class="section-clients">
+                <div>
+                    <h2 class="section-header">My Clients</h2>
+                    <div class="cg-flex flex flex-wrap">
+                        <div class="cg-item border-l rounded-l-xl rounded-b-xl">
+                            <img src="assets/images/clients/appstosoft.png" alt="appstosoft">
+                            <p class="text-justify pb-5">
+                                AppsToSoft's purpose is to provide you the
+                                best and latest software in the easiest
+                                downloading method possible for your better
+                                experience without the usual pop up and low
+                                quality software.
+                                <span>&#x1F517;
+                                    <a class="d-link d-link-info" href="https://appstosoft.com/#developer"
+                                        target="_blank" rel="Developer">Visit
+                                        Site
+                                    </a>
+                                </span>
+
+                            </p>
+                        </div>
+                        <div class="cg-item border-r rounded-r-xl rounded-b-xl">
+                            <img src="assets/images/clients/ncc.jpg" alt="ncc">
+                            <p class="text-justify pb-5">
+                                NCC Institute of Technology is an
+                                institution where empowering the community
+                                for an excellent standard of learning is
+                                what we desire.
+                                <span>&#x1F517; <a class="d-link d-link-info" href="https://www.nccitbd.com/"
+                                        target="_blank" rel="Developer">Visit Site
+                                    </a></span>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Section Clients-->
+        <!-- Section Education-->
+        <section id="education">
+            <div class="section-education">
+                <div class="text-center">
+                    <span class="text-sm font-semibold">Where from I learn?</span>
+                    <h2 class="section-header">Learning</h2>
+                </div>
+                <div class="online">
+                    <div class="text-center"><span class="badge badge-info">Youtube Channels</span></div>
+                    <div class="yt-channels flex flex-wrap gap-2 justify-center">
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/thenewboston.jpg" alt="@thenewboston">
+                            <div>@thenewboston</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/derekbanas.jpg" alt="@derekbanas">
+                            <div>@derekbanas</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/TraversyMedia.jpg" alt="TraversyMedia">
+                            <div>@TraversyMedia</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/coreyms.jpg" alt="coreyms">
+                            <div>@coreyms</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/Laracastsofficial.jpg" alt="Laracastsofficial">
+                            <div>@Laracastsofficial</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/programmingwithmosh.jpg" alt="programmingwithmosh">
+                            <div>@programmingwithmosh</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/EzeeLinux.jpg" alt="EzeeLinux">
+                            <div>@EzeeLinux</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/theurbanpenguin.jpg" alt="theurbanpenguin">
+                            <div>@theurbanpenguin</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/Bitfumes.jpg" alt="Bitfumes">
+                            <div>@Bitfumes</div>
+                        </div>
+                        <div class="yt-channel">
+                            <img src="assets/images/yt-channels/DigitalMarketingLiveCourse.jpg"
+                                alt="DigitalMarketingLiveCourse">
+                            <div>@DigitalMarketingLiveCourse</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="academic relative">
+                    <div class="badge badge-info"><span>Academic</span></div>
+                    <div class="timeline p-5">
+                        <div class="time right-time">
+                            <img src="assets/images/education/diu-2.png" alt="diu" width="40" height="40">
+                            <div class="text-box">
+                                <h2>Bachelor of Arts in English</h2>
+                                <small>2013 - 2014 (Evening)</small>
+                                <p>Dhaka International University</p>
+                                <span class="right-time-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="time left-time">
+                            <img src="assets/images/education/ibcs.png" alt="ibcs" width="40" height="40">
+                            <div class="text-box">
+                                <h2>
+                                    Developing Dynamic Web Applications Using
+                                    PHP and MySQL
+                                </h2>
+                                <small>Short Course (2012)</small>
+                                <p>IBCS-PRIMAX Software(Bangladesh) Limited</p>
+                                <span class="left-time-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="time right-time">
+                            <img src="assets/images/education/diu.png" alt="diu" width="40" height="40">
+                            <div class="text-box">
+                                <h2>
+                                    ETE- Electronics & Telecommunication
+                                    Engineering
+                                </h2>
+                                <small>2007 - 2008 (Uncompleted due to road
+                                    accident.)</small>
+                                <p>Daffodil International University</p>
+                                <span class="right-time-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="time left-time">
+                            <img src="assets/images/education/baf.png" alt="BAF" width="40" height="40">
+                            <div class="text-box">
+                                <h2>Higher Secondary Certificate</h2>
+                                <small>2006</small>
+                                <p>BAF Shaheen College Kurmitola</p>
+                                <span class="left-time-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="time right-time">
+                            <img src="assets/images/education/board.png" alt="Education Board" width="40" height="40">
+                            <div class="text-box">
+                                <h2 class="text-base-content">
+                                    Secondary School Certificate
+                                </h2>
+                                <small>2003</small>
+                                <p>Kalihati R.S. Govt. Pilot High School</p>
+                                <span class="right-time-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Section Education-->
+        <!-- Section Contact-->
+        <section id="contact">
+            <div class="section-contact">
+                <h3 class="section-header">Contact Info</h3>
+                <div class="flex flex-wrap mt-12">
+                    <div class="contact-item pb-5">
+                        <div class="contact-info">
+                            <div>
+                                <a href="mailto:shafiur52@gmail.com">
+                                    <img src="assets/images/icons/envelope.svg" alt="Envelope">
+                                    shafiur52@gmail.com</a>
+                            </div>
+                            <div>
+                                <a href="tel:+8801712-236284">
+                                    <img src="assets/images/icons/phone.svg" alt="Phone">+8801712-236284</a>
+                            </div>
+
+                            <address>
+                                <img src="assets/images/icons/location.svg" alt="Location">
+                                Tangail, Dhaka, Bangladesh
+                            </address>
+                        </div>
+                    </div>
+                    <div class="contact-item rounded-2xl m-8 md:m-0">
+                        <div class="google-maps">
+                            <iframe class="rounded-2xl"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58205.28271967592!2d89.87597105701181!3d24.247717963591025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdfbe3d271b363%3A0x8a0d420f347f7c7c!2sTangail!5e0!3m2!1sen!2sbd!4v1698085837503!5m2!1sen!2sbd"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Section Contact-->
+        <!-- Section Footer -->
+        <footer id="footer">
+            <div class="section-footer pt-12">
+                <div class="social-links flex flex-row justify-center gap-2 p-5">
+                    <a href="https://github.com/shafiurshamim" target="_blank" rel="noopener">
+                        <img src="assets/images/socials/gh.svg" alt="Github">
+                    </a>
+                    <a href="https://www.facebook.com/rwdbd" target="_blank" rel="noopener">
+                        <img src="assets/images/socials/fb.svg" alt="Facebook">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shafiurshamim" target="_blank" rel="noopener">
+                        <img src="assets/images/socials/ln.svg" alt="Linkedin">
+                    </a>
+                </div>
+                <div class="footer-text text-center border-t rounded-3xl p-4">
+                    <small class="text-base lg:text-xs">All rights reserved by &copy; Shafiur Shamim
+                        2023</small>
+                </div>
+            </div>
+        </footer>
+        <!-- //Section Footer-->
+    </div>
+    <div id="prevModal" class="my-modal">
+        <div class="my-modal-content">
+            <div class="h-[80vh] w-[80vw] relative mx-auto">
+                <span class="close">&times;</span>
+                <img class="mx-auto" alt="" id="prevImg" src="assets/images/logo.svg">
+            </div>
+        </div>
+    </div>
+    <div
+        class="scroll-to-top cursor-pointer hidden fixed bottom-8 right-8 w-10 h-10 rounded-md drop-shadow-md z-40 bg-primary">
+        <span class="top-arrow block w-4 h-4 mx-auto mt-4 border-t border-l border-white rotate-45"></span>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

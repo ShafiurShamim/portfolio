@@ -1,0 +1,113 @@
+.time .text-box {
+    @apply bg-base-100 text-base-content px-5 py-8 shadow-2xl rounded-md border-2 border-base-content break-words;
+}
+.time .text-box h2 {
+    @apply text-lg font-bold leading-none;
+}
+.academic .badge{
+    @apply absolute -left-12 md:left-[40%] top-14 -rotate-90
+}
+.yt-channels {
+    @apply py-4 border-b-2 border-neutral-content rounded-3xl;
+}
+.yt-channel {
+    @apply bg-base-100 text-base-content rounded-2xl max-w-sm p-4 mr-2 flex;
+}
+.yt-channel img {
+    @apply w-6 h-6 rounded-md mr-2;
+}
+.online{
+    @apply my-16;
+}
+/* Timeline */
+.timeline {
+    @apply relative w-full
+}
+.time {
+    width: 50%;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.left-time {
+    left: 0;
+}
+.right-time {
+    left: 50%;
+}
+
+.time img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-time img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #236284;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.right-time-arrow,
+.left-time-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.right-time-arrow {
+    border-right: 15px solid;
+    left: 26px;
+}
+.left-time-arrow {
+    border-left: 15px solid;
+    right: 26px;
+}
+@media screen and (max-width: 768px) {
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .time {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box {
+        font-size: 13px;
+    }
+    .text-box small {
+        margin-bottom: 10px;
+    }
+    .right-time {
+        left: 0;
+    }
+    .left-time img,
+    .right-time img {
+        left: 10px;
+    }
+    .left-time-arrow,
+    .right-time-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: 66px;
+    }
+}

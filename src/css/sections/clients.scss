@@ -1,0 +1,12 @@
+.cg-flex {
+    @apply mt-14
+}
+.cg-item {
+    @apply relative p-5 md:w-1/2 w-full flex justify-center items-center md:items-start flex-col md:flex-row gap-8
+}
+.cg-item img {
+    @apply max-w-[12rem]
+}
+.cg-item span {
+    @apply absolute right-5 bottom-4
+}

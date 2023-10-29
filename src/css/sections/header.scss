@@ -1,0 +1,45 @@
+/* Cursor-blink animation start */
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+.intro h1 .im_::after {
+    @apply content-[""] w-5 h-1 inline-block bg-base-content brightness-150 animate-[cursor-blink_1.5s_steps(2)_infinite];
+}
+/* Cursor-blink animation end */
+.intro h2 span.gradient {
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
+
+.hamburger-nav {
+    @apply h-6 w-6 relative cursor-pointer
+}
+.hamburger-nav span {
+    @apply block absolute w-full h-[3px] rounded-lg right-0 ml-auto bg-base-content
+}
+.hamburger-nav span:nth-child(1) {
+    @apply top-0
+}
+.hamburger-nav span:nth-child(2),
+.hamburger-nav span:nth-child(3) {
+    @apply top-2 w-4/5
+}
+.hamburger-nav span:nth-child(4) {
+    @apply top-4 w-3/5
+}
+.menu a {
+    @apply text-base px-3 py-2 hover:bg-base-300 text-base-content rounded-lg;
+}
+.menu.show a{
+    @apply text-3xl brightness-150 p-6
+}
+.menu a {
+    @apply border-t-[3px] border-solid border-transparent
+}
+.menu a.active {
+    @apply border-primary text-primary
+}

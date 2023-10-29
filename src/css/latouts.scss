@@ -1,0 +1,24 @@
+#home,
+#services,
+#portfolio,
+#clients,
+#education,
+#contact{
+    @apply py-20 md:py-28 flex justify-center items-center min-h-[700px]
+}
+#home,
+#education,
+
+.section-home,
+.section-services,
+.section-portfolio,
+.section-clients,
+.section-education,
+.section-contact,
+.section-footer
+{
+    @apply container px-6 mx-auto
+}
+.section-header{
+    @apply text-4xl font-bold text-center pb-5
+}

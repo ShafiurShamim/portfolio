@@ -1,0 +1,7 @@
+.section-home
+{
+    @apply flex flex-col md:flex-row gap-5 md:mt-20 lg:py-[3.2rem] mt-5 
+}
+.hero img {
+    @apply rounded-3xl md:shadow-[-10px_-10px_15px] shadow-primary
+}

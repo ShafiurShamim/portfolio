@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "latouts.scss";
+@import "style.css";
+@import "sections/header.scss";
+@import "sections/home.scss";
+@import "sections/services.scss";
+@import "sections/portfolio.scss";
+@import "sections/clients.scss";
+@import "sections/education.scss";
+@import "sections/contact.scss";
+@import "sections/footer.scss";
+
+html {
+    @apply scroll-smooth;
+}
+body {
+    font-family: inter, sans-serif;
+}
+.badge {
+    @apply px-1 py-0.5 text-sm rounded;
+}
+.badge-info {
+    @apply bg-info text-info-content;
+}
+.fill-color {
+    @apply fill-base-content;
+}
